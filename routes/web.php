@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/ecomerce/anuncio', [App\Http\Controllers\HomeController::class, 'show'])->name('anuncio');
+
+Route::get('/biblioteca/index', [App\Http\Controllers\BibliotecaController::class, 'index'])->name('biblioteca.index');

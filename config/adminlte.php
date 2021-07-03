@@ -311,6 +311,72 @@ return [
                 ],
             ],
         ],
+
+        ['header' => 'BIBLIOTECA'],
+        [
+            'text'    => 'Livros',
+            'icon'    => 'fas fa-book', //fas fa-fw fa-share  fas fa-users
+            'label'       => 2,
+            'label_color' => 'primary',
+            'submenu' => [
+
+                [
+                    'text'    => 'Conhecimento Geral',
+                    'url'     => '#',
+                    'icon' => 'fas fa-atlas',
+                    'submenu' => [
+                        [
+                            'text' => 'StarWars',
+                            'url'  => '#',
+                            'icon' => 'fas fa-journal-whills',
+                        ],
+                        [
+                            'text' => 'Saúde',
+                            'url'  => '#',
+                            'icon' => 'fas fa-book-medical',
+                        ],
+                        [
+                            'text'    => 'Religião',
+                            'url'     => '#',
+                            'icon' => 'fas fa-bible',
+                            'submenu' => [
+                                [
+                                    'text' => 'Islã',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-quran',
+                                ],
+                                [
+                                    'text' => 'Judaismo',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-torah',
+                                ],
+                                [
+                                    'text' => 'Cristianismo',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-bible',
+                                ],
+                                [
+                                    'text' => 'Demonologia',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-book-dead',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Física',
+                    'url'  => '#',
+                    'icon' => 'fas fa-atom',
+                ],
+                [
+                    'text' => 'Matemática',
+                    'url'  => '#',
+                    'icon' => 'fas fa-square-root-alt',
+                ],
+            ],
+        ],
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
