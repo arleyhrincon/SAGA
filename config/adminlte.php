@@ -50,7 +50,7 @@ return [
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'SAGA',
 
     /*
     |--------------------------------------------------------------------------
@@ -88,7 +88,7 @@ return [
     'layout_fixed_sidebar' => null,
     'layout_fixed_navbar' => null,
     'layout_fixed_footer' => null,
-    'layout_dark_mode' => null,
+    'layout_dark_mode' => null, // true para tema escuro - null para claro.
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +167,7 @@ return [
     |
     */
 
-    'right_sidebar' => false,
+    'right_sidebar' => true,
     'right_sidebar_icon' => 'fas fa-cogs',
     'right_sidebar_theme' => 'dark',
     'right_sidebar_slide' => true,
@@ -228,7 +228,7 @@ return [
         // Navbar items:
         [
             'type'         => 'navbar-search',
-            'text'         => 'search',
+            'text'         => 'Pesquisar...',
             'topnav_right' => true,
         ],
         [
@@ -239,7 +239,7 @@ return [
         // Sidebar items:
         [
             'type' => 'sidebar-menu-search',
-            'text' => 'search',
+            'text' => 'Pesquisar...',
         ],
         [
             'text' => 'blog',
@@ -250,8 +250,66 @@ return [
             'text'        => 'pages',
             'url'         => 'admin/pages',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
+            'label'       => 1,
             'label_color' => 'success',
+        ],
+        ['header' => 'CABEÇALHO'],
+        [
+            'text'        => 'Anuncio',
+            'url'         => 'ecomerce/anuncio',
+            'icon'        => 'far fa-file-archive',
+            'label'       => 2,
+            'label_color' => 'info',
+        ],
+                [
+            'text'    => 'CADASTROS',
+            'icon'    => 'fas fa-users', //fas fa-fw fa-share  fas fa-users
+            'submenu' => [
+                [
+                    'text' => ' Vários',
+                    'url'  => '#',
+                    'icon' => 'fas fa-user-friends'
+                ],
+                [
+                    'text'    => ' Único Branco',
+                    'url'     => '#',
+                    'icon' => 'fas fa-user',
+                    'submenu' => [
+                        [
+                            'text' => 'Usuário Tag',
+                            'url'  => '#',
+                            'icon' => 'fas fa-user-tag',
+                        ],
+                        [
+                            'text'    => 'Add Usuário',
+                            'url'     => '#',
+                            'icon' => 'fas fa-user-plus',
+                            'submenu' => [
+                                [
+                                    'text' => 'Usuário Config',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-users-cog',
+                                ],
+                                [
+                                    'text' => 'Usuário Lock',
+                                    'url'  => '#',
+                                    'icon' => 'fas fa-user-lock',
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+                [
+                    'text' => 'Único Transparente',
+                    'url'  => '#',
+                    'icon' => 'far fa-user',
+                ],
+                [
+                    'text' => 'Gestor',
+                    'url'  => '#',
+                    'icon' => 'fas fa-user-tie',
+                ],
+            ],
         ],
         ['header' => 'account_settings'],
         [
